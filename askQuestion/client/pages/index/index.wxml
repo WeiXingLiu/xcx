@@ -1,0 +1,31 @@
+<view class="container">
+    <view class="searchContainer">
+        <image src="../../icon/search.png" class="search" />
+        <input class="input" placeholder="输入关键词" bindinput="searchKeyChanged" bindconfirm="inputSerachKeyComplete" value="{{searchKey}}"/>
+        <image src="../../icon/clear.png" class="clear" bindtap="clearSearchKey" />
+    </view>
+
+    <image src="../../icon/ask.png" class="askBtn" bindtap="askQuestion" />
+
+    <block wx:for="{{questionList}}" wx:key="{{item.id}}">
+        <view class="questionContainer" bindtap="tapItem" id="{{item.id}}">
+            <view class="questionHeader">
+                <view class="bottomLine">
+                    <view class="question">
+                        <image class="questionImage" src="../../icon/question.png"/>
+                        {{item.title}}
+                    </view>
+                </view>
+            </view>
+
+            <view class="answerContainer">
+                <text class="answer">{{item.answerContent ? item.answerContent : '暂无回复'}}</text>
+                <pictures wx:if="{{item.photoUrls.length > 0}}" imageResource="{{item.photoUrls}}" row="{{item.row}}" canEdit="{{false}}" bind:previewImage="previewImage"/>
+                <view class="date">{{item.askDate}}</view>
+            </view>
+
+            <view class="bottomSpaceLine"></view>
+        </view>
+
+    </block>
+</view>

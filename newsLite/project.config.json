@@ -1,0 +1,10 @@
+{
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wxa5df94c629666ae9",
+	"projectname": "newsLite",
+	"condition": {}
+}

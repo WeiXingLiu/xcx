@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/navigation/navigation",
+    "pages/logs/logs",
+    "pages/map/map",
+    "pages/scanCode/scanCode",
+    "pages/swiper/swiper"
+  ],
+  "window": {
+    "navigationStyle": "default",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "lwx",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "red",
+    "backgroundColor": "orange",
+    "position": "bottom",
+
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "icon/tabbar_patient.png",
+      "selectedIconPath": "icon/tabbar_patient_select.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "iconPath": "icon/tabbar_consult.png",
+      "selectedIconPath": "icon/tabbar_consult_select.png",
+      "text": "日志"
+    }, {
+      "pagePath": "pages/map/map",
+      "iconPath": "icon/tabbar_count.png",
+      "selectedIconPath": "icon/tabbar_count_select.png",
+      "text": "地图"
+    }, {
+      "pagePath": "pages/scanCode/scanCode",
+      "iconPath": "icon/tabbar_communicate.png",
+      "selectedIconPath": "icon/tabbar_communicate_select.png",
+      "text": "扫码"
+    }]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug": true
+}

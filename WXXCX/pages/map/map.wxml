@@ -1,0 +1,8 @@
+<view>
+   <button bindtap='back'>
+    back to my location
+  </button>
+
+  <map class='mapView' longitude="{{longitude}}" latitude="{{latitude}}" show-location='{true}'>
+  </map>
+</view>

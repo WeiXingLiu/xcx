@@ -1,0 +1,45 @@
+<view class="container">
+    <view class="swiperContainer">
+        <swiper class="swiper" indicator-dots="{{true}}" indicator-color="orange" indicator-active-color="#000000" autoplay="{{true}}" interval="3000" circular="{{true}}">
+            <block wx:for="{{swiper}}" wx:key="{{item.newsId}}">
+                <swiper-item>
+                    <image src="{{item.newsUrl}}" class="image" mode="aspectFit" bind:tap="swiperItemClick" id="{{index}}"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <view class="newsList">
+        <block wx:for="{{newsList}}" wx:key="{{index}}">
+            <view class="newContainer" bind:tap="listItemClick" id="{{index}}">
+                <text class="newsTitle">{{item.newTitle}}</text>
+
+                <view class="middleContainer">
+                    <view class="leftContainer">
+                        <text class="newsContent">{{item.newContent}}</text>
+                        <view class="tipContainer">
+                            <view class="tipItem">
+                                <image src="../../icon/medal.png" class="tipImage" />
+                                <text class="tipContent">{{item.newsLabel}}</text>
+                            </view>
+
+                            <view class="tipItem">
+                                <image src="../../icon/word.png" class="tipImage" />
+                                <text class="tipContent">{{item.newsWordCount}}</text>
+                            </view>
+
+                            <view class="tipItem">
+                                <image src="../../icon/watch.png" class="tipImage" />
+                                <text class="tipContent">{{item.newsWatchCount}}</text>
+                            </view>
+
+                        </view>
+                    </view>
+                    <view class="imageContainer">
+                        <image class="newsListImage" src="{{item.newsUrl}}" mode="scaleToFill" />
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

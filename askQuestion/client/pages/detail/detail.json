@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "详情",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "pictures": "/components/pictures/pictures",
+        "noMoreData": "/components/noMoreData/noMoreData",
+        "score": "/components/score/score"
+    }
+}

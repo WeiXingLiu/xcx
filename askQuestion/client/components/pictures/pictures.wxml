@@ -1,0 +1,13 @@
+<view class="imagesContainer" wx:if="{{imageResource.length > 0 || canEdit}}">
+    <block wx:for="{{row}}" wx:for-item="imageRow" wx:key="{{imageRow}}">
+        <view class="imageContainer">
+            <block wx:for="{{(imageResource.length - imageRow * 3) >= 3 ? 3 : (imageResource.length - imageRow * 3)}}" wx:for-item="column" wx:key="{{imageResource[3 * imageRow + column]}}">
+                <view class="itemContainer">
+                    <image src="{{imageResource[3 * imageRow + column]}}" class="image" catchtap="previewImage" id="{{imageRow * 3 + column}}" />
+                    <image wx:if="{{canEdit}}" src="../../icon/clear.png" class="delete" bindtap="deleteImage" id="{{imageRow * 3 + column}}"/>
+                </view>
+            </block>
+            <image src="../../icon/upload.png" class="itemContainer" wx:if="{{((imageResource.length - imageRow * 3) < 3) && canEdit}}" bindtap="chooseImage" />
+        </view>
+    </block>
+</view>

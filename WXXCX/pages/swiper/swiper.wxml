@@ -1,0 +1,38 @@
+  <view>  
+    <swiper indicator-dots="{{true}}"
+    autoplay="{{true}}" interval="{{2000}}" duration="{{500}}" circular="{{true}}">
+    
+      <block wx:for="{{items}}" wx:key="*this">
+        <swiper-item>
+          <view class="item {{item}}"></view>
+        </swiper-item>
+      </block>
+
+      <block wx:for="{{items}}" wx:key="*this">
+        <swiper-item>
+          <view class="item {{item}}"></view>
+        </swiper-item>
+      </block>
+
+      <block wx:for="{{items}}" wx:key="*this">
+            <swiper-item>
+              <view class="item {{item}}"></view>
+            </swiper-item>
+          </block>
+    </swiper>
+
+    <movable-area style="background:pink;width: 200px; height: 200px">
+      <movable-view style="background: white;width: 40px;height: 40px" x="{{10}}" y="{{10}}" direction="all" inertia="{{true}}">
+      </movable-view>
+    </movable-area>
+
+    <progress percent='20' show-info='true' 
+    stroke-width='4' color='red' activeColor='blue' 
+    backgroundColor='yellow' active='true' 
+    active-mode='backwards'></progress>
+
+    <text>{{text}}</text>
+    <button bindtap='addLine'>add line</button>
+    <button bindtap='removeLine'>remove line</button>
+    
+  </view>  

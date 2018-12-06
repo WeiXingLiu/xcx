@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "scanCode",
+
+  "navigationBarBackgroundColor": "#FFFF00",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "orange",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}

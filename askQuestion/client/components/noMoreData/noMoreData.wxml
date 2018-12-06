@@ -1,0 +1,1 @@
+<text class="noMore" wx:if="{{show}}">暂无更多数据</text>

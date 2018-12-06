@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="imageContainer">
+        <image src="../../icon/bikeLogo.jpg" style="width: 200px; height: 100px"/>
+    </view>
+
+    <view class="inputContainer">
+        <text class="inputName">输入编码</text>
+        <input class="input" placeholder="请输入车辆编码"
+            type="number" maxlength="{{8}}" auto-focus="{{true}}"
+            adjust-position="{{true}}" bindinput="inputCode"/>
+    </view>
+
+    <text class="inputTip">请确认您输入了正确的自行车编码</text>
+
+</view>

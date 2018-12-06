@@ -1,0 +1,5 @@
+<view class="container">
+    <block wx:for="{{5}}" wx:key="{{index}}">
+        <image class="image" src="{{icon}}" id="{{index}}"/>
+    </block>
+</view>

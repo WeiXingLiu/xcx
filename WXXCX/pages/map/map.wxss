@@ -1,0 +1,9 @@
+.mapView {
+  width: 375px;
+  height: 667px
+}
+.button{
+  position: absolute;
+  width: 100px;
+  height: 40px
+}

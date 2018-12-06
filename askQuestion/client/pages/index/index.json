@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "问答",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "pictures": "/components/pictures/pictures"
+    }
+}

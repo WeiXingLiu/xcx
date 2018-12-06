@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="titleContainer">
+        <view class="titleSecondContainer">
+            <text>{{detail.newTitle}}</text>
+        </view>
+    </view>
+
+    <view class="writerContainer">
+        <view class="writerSecondContainer">
+            <text>{{detail.newsWriter}}</text>
+        </view>
+    </view>
+
+    <view class="imageContainer">
+        <view class="imageSecondContainer">
+            <image src="{{detail.newsUrl}}" class="image" bind:tap="previewImage" />
+        </view>
+    </view>
+
+    <view class="contentContainer">
+        <text>{{detail.newContent}}</text>
+    </view>
+
+    <view wx:if="{{detail}}" class="backView" bind:tap="back">Back</view>
+</view>

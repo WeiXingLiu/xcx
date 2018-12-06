@@ -1,0 +1,42 @@
+<view class="container">
+    <view class="scanCodeOutContainer">
+        <view bindtap="enterCodeClick" class="scanCodeContainer">
+            <text class="bikeCodeText" wx:if="{{bikeCode}}">车辆编码: {{bikeCode}}</text>
+            <text class="scanCodeText" wx:if="{{!bikeCode}}">扫描二维码或输入编码</text>
+            <image src="../../icon/scanCode.png" class="scanCodeImage"/>
+        </view>
+    </view>
+
+    <text class="titleText">请选择损坏部位</text>
+
+    <view class="departmentIconViewContainer">
+        <view wx:for="{{departmentInfo}}" wx:key="index" class="departmentIconContainer" bindtap="departmenClick" id="{{index}}">
+            <block>
+                <image src="{{item.selected? item.iconSelectedName : item.iconName}}" class="departmentIcon"/>
+                <text class="departmentName">{{item.departmentName}}</text>
+            </block>
+        </view>
+    </view>
+
+    <view wx:if="{{showInput}}" class="detailContainer">
+        <block wx:for="{{imageResource}}" wx:key="{{index}}">
+            <view class="imageResourceContainer">
+                <image src="{{item}}" class="imageResource" mode="scaleToFill"/>
+                <icon type="cancel" size="20" class="deleteIcon" bindtap="deleteImage" id="{{index}}"/>
+            </view>
+        </block>
+        <image wx:if="{{imageResource.length < 3}}" src="../../icon/camera.png" class="uploadImage imageResource" mode="scaleToFill" bindtap="chooseImage"/>
+
+        <view class="bottomTextareaContainer">
+            <view class="textareaContainer">
+                <textarea class="detailInputArea" placeholder="请描述具体故障" adjust-position="{{true}}" cursor-spacing="120" bindinput="detailInput"></textarea>
+            </view>
+            <text class="inputLength">{{reportDetail.length}}/140</text>
+        </view>
+    </view>
+
+    <view class="submitContainer">
+        <button class="submitButton" bindtap="submitDetail" disabled="{{!(showInput && bikeCode)}}">提交</button>
+    </view>
+
+</view>

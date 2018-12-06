@@ -1,0 +1,4 @@
+<view>
+  <button bindtap='scanCode'>扫码
+  </button>
+</view>

@@ -1,0 +1,24 @@
+<view class="container">
+    <view class="mapContainer">
+            <!-- <view class="mapLocationContainer"> -->
+                <map  
+                    id="myMap" class='mapLocationContainer' 
+                    latitude="{{latitude}}" longitude="{{longitude}}" 
+                    markers="{{markers}}" show-location="{{true}}" 
+                    bindregionchange="bindupdated"
+                    scale="{{18}}">
+                    <cover-image src="../../icon/location.png" class="currentLocation"></cover-image>
+                    <cover-view class="btnContainer">
+                        <cover-image src="../../icon/clock.png" bindtap='tapBlueTooth' class="clickBtn"></cover-image>
+                        <cover-image src="../../icon/clock.png" bindtap='report' class="clickBtn"></cover-image>
+                        <cover-image src="../../icon/clock.png" bindtap='location' class="clickBtn"></cover-image>
+                    </cover-view>
+                </map>
+            <!-- </view> -->
+
+
+    </view>
+
+    <button class="scanBtn" bindtap='scanCode'>扫码开锁</button>
+
+</view>

@@ -1,0 +1,173 @@
+.leftBottomSpaceContainer {
+    width: 100%;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+    margin-bottom: 120rpx;
+}
+
+.leftBottomSpace {
+    width: 100%;
+    border-bottom: 2rpx solid rgb(232, 228, 228);
+}
+
+.questionHeader {
+    width: 100%;
+    margin-top: 40rpx;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.questionImage {
+    margin-left: 0;
+    margin-top: 0;
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.question {
+    font-weight:bold;
+    margin-left: 20rpx;
+    margin-right: 40rpx;
+    margin-top: 40rpx;
+    font-size: 34rpx;
+}
+
+.asker {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.picContainer {
+    position: relative;
+    margin-top: 40rpx;
+}
+
+.answerContainer {
+    margin-left: 0;
+    margin-right: 0;
+    color: rgb(60, 67, 80);
+    font-size: 30rpx;
+}
+
+.date {
+    position: relative;
+    text-align: right;
+    margin-top: 20rpx;
+    margin-right: 0;
+    margin-bottom: 20rpx;
+    font-size: 28rpx;
+    color: rgb(140, 149, 159);
+}
+
+.commnetsContainer {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.comment {
+    display: flex;
+    margin-top: 40rpx;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 60rpx;
+}
+
+.name {
+    font-size: 30rpx;
+}
+
+.content {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 28rpx;
+    margin-left: 10rpx;
+    margin-right: 120rpx;
+    word-break: break-all
+}
+
+.commentDate {
+    color: rgb(218, 213, 207);
+    font-size: 28rpx;
+    position: absolute;
+    right: 40rpx;
+}
+
+.tool {
+    background-color: white;
+    border-top: 2rpx solid rgb(227, 222, 222);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100rpx;
+
+    display: flex;
+}
+
+.container {
+    flex: 1;
+    height: 100%;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.title {
+    margin-left: 20rpx;
+    font-size: 28rpx;
+}
+
+.commentContainer {
+    border-top: 2rpx solid rgb(202, 198, 198);
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 180rpx;
+}
+
+.textContainer {
+    background-color: aliceblue;
+    border-radius: 4rpx;
+    position: fixed;
+    display: inline-block;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+    width: 75%;
+    height: 140rpx;
+}
+
+.textArea {
+    top: 10rpx;
+    left: 10rpx;
+    right: 10rpx;
+    bottom: 10rpx;
+
+    display: inline-block;
+    width: 98%;
+    height: 120rpx;
+    font-size: 30rpx;
+}
+
+.submitButton {
+    border-radius: 4rpx;
+    font-size: 30rpx;
+    position: absolute;
+    display: inline-block;
+    top: 40rpx;
+    right: 40rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    width: 100rpx;
+    background-color: aqua
+}

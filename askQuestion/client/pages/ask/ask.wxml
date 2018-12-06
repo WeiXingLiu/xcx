@@ -1,0 +1,11 @@
+<view class="container">
+    <view class="textAreaContainer">
+        <textarea class="textArea" placeholder="输入提问内容" value="{{question}}" adjust-position="{{false}}" bindinput="inputChanged"></textarea>
+    </view>
+    <view class="picContainer">
+        <pictures imageResource="{{imageResource}}" row="{{row}}" bind:previewImage="previewImage" bind:deleteImage="deleteImage" bind:chooseImage="chooseImage" />
+    </view>
+    <button class="btn" type="primary" disabled="{{question.length == 0}}" bindtap="submitBtn">
+        发布
+    </button>
+</view>

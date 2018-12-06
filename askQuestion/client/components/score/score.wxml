@@ -1,0 +1,10 @@
+<view class="container"  bind:tap="imageClick">
+
+    <view class="starContainer">
+        <star icon="../../icon/star.png"></star>
+    </view>
+
+    <view style="position: absolute; width:{{star * 50}}rpx; overflow:hidden">
+        <star icon="../../icon/star_selected.png"></star>
+    </view>
+</view>

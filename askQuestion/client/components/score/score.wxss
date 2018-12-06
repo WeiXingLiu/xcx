@@ -1,0 +1,9 @@
+.container {
+    position: relative;
+    width: 250rpx;
+    height: 40rpx;
+}
+
+.starContainer {
+    position: absolute;
+}

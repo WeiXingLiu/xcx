@@ -1,0 +1,47 @@
+<view class="container">
+    <view class="leftBottomSpaceContainer">
+        <view class="leftBottomSpace">
+            <view class="questionHeader">
+                <image src="../../icon/question.png" class="questionImage" />
+                {{detail.title}}
+                <text class="asker">{{detail.asker}}</text>
+            </view>
+
+            <view class="picContainer">
+                <pictures wx:if="{{detail.photoUrls.length > 0}}" imageResource="{{detail.photoUrls}}" row="{{detail.row}}" canEdit="{{false}}" bind:previewImage="previewImage"/>
+            </view>
+            <score star="{{star}}" editable="{{true}}" bind:scoreClick="imageClick"></score>
+            <view class="answerContainer">{{detail.answerContent ? detail.answerContent : '暂无回复'}}</view>
+            <view class="date">{{detail.answer}} + {{detail.askDate}}</view>
+        </view>
+
+        <view class="commnetsContainer" wx:if="{{commentsList.length > 0}}">
+            <block wx:for="{{commentsList}}" wx:key="index">
+                <view class="comment">
+                    <text class="name">{{item.commenter}}：</text>
+                    <text class="content">{{item.comment}}</text>
+                    <text class="commentDate">{{item.commentDate}}</text>
+                </view>
+            </block>
+        </view>
+
+        <noMoreData show="{{hasMore == false}}"></noMoreData>
+
+        <view class="tool">
+            <block class="" wx:for="{{[{icon: '../../icon/like.png', title: detail.likeCount}, {icon: '../../icon/comment.png', title: '评论'}, {icon: '../../icon/share.png', title: '分享'}]}}" wx:key="index">
+                <view class="container" bindtap="clickTool" id="{{index}}">
+                    <image src="{{(detail.likeStatus == '1' && index == 0) ? '../../icon/like_selected.png' : item.icon}}" class="image"/>
+                    <text class="title">{{item.title}}</text>
+                </view>
+            </block>
+        </view>
+
+        <view class="commentContainer" hidden="{{hideCommnet}}">
+            <view class="textContainer">
+                <textarea class="textArea" fixed="{{true}}" placeholder="输入提问内容" value="{{comment}}" focus="{{!hideCommnet}}" adjust-position="{{true}}" cursor-spacing="{{40}}" bindinput="inputChanged"></textarea>
+            </view>
+            <view class="submitButton" bindtap="sendCommnet">发送</view>
+        </view>
+
+    </view>
+</view>

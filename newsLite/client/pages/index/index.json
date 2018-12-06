@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "News Lite",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF"
+}

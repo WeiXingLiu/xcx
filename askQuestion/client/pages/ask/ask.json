@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "提问",
+    "usingComponents": {
+        "pictures": "/components/pictures/pictures"
+    }
+}

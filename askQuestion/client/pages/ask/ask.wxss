@@ -1,0 +1,23 @@
+.textAreaContainer {
+    margin-top: 40rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+    height: 200rpx;
+    background-color: rgb(249, 246, 242);
+}
+
+.textArea {
+    color: black;
+    height: 180rpx;
+    font-size: 28rpx;
+    margin: 10rpx;
+    color: rgb(0, 2, 2);
+    border-radius: 4rpx;
+}
+
+.picContainer {
+    position: absolute;
+    top: 280rpx;
+    left: 60rpx;
+    right: 60rpx;
+}

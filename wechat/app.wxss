@@ -1,0 +1,6 @@
+.container {
+    height: 100vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: rgb(244, 245, 237)
+}

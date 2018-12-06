@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/report/report",
+        "pages/inputCode/inputCode"
+    ],
+    
+    "window": {
+        "navigationStyle": "default",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "red",
+        "navigationBarTitleText": "lwx",
+        "navigationBarTextStyle": "black"    
+    }
+}
